@@ -1,0 +1,348 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body,
+html {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+}
+
+.navbar {
+	align-items: flex-start;
+}
+
+.logo {
+	transition: width .3s, margin-left .3s;
+	height: auto;
+	margin-top: 2%;
+	width: 100%;
+	margin-left: 20%;
+}
+
+.smaller {
+	width: 60%;
+	margin-left: 10%;
+}
+
+#mainNavbar {
+	margin-top: 5px;
+}
+
+#mainNavbar li a {
+	color: whitesmoke;
+	font-size: 1.2em;
+	margin-left: 1.6em;
+	font-weight: 500;
+}
+
+#mainNavbar li a:hover {
+	background-color: rgba(255, 255, 255, 0.835);
+	color: black;
+}
+
+section i {
+	color: white;
+	font-size: 2.8em;
+	transition: transform 0.5s;
+}
+
+.button1,
+.button2 {
+	text-decoration: none !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100px;
+	height: 100px;
+	border: 2px solid white;
+}
+
+.button1 {
+	margin: 8em auto 0;
+	border-radius: 50%;
+}
+
+.button2 {
+	margin: auto auto 0;
+	border-radius: 50% 50% 0 0;
+	border-bottom: none;
+}
+
+.button1:hover i,
+.button2:hover i {
+	transform: translateY(20%);
+}
+
+#home,
+#quienes-somos,
+#nuestro-estilo,
+#contactate {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	background-size: cover;
+	background-position: center;
+	flex-direction: column;
+}
+
+#home {
+	background-image: url(../imgs/banner1.jpg);
+	align-items: center;
+}
+
+#home .box {
+	margin-top: 18%;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+}
+
+#home .box h1 {
+	-webkit-transform: scale(0.8, 1.1);
+	transform: scale(0.8, 1.1);
+	color: #b19d73;
+	font-size: 7.5em;
+	font-weight: bold;
+}
+
+#home .box p:nth-child(2) {
+	color: white;
+	font-family: Georgia, serif;
+	font-size: 1.3em;
+	font-weight: 600;
+}
+
+#home .box p:nth-child(3) {
+	color: #b19d73;
+	font-size: 1.8em;
+	font-family: serif;
+	font-weight: 600;
+	font-style: italic;
+}
+
+#quienes-somos {
+	background-image: url(../imgs/banner2.jpg);
+}
+
+#quienes-somos .box {
+	width: 40%;
+	height: 49%;
+	background-color: white;
+	margin: 10% 0 0 auto;
+	padding: 3.3em 0 0 3.5em;
+}
+
+#quienes-somos .box h2 {
+	-webkit-transform: scaleX(0.8);
+	transform: scaleX(0.8);
+	width: 45%;
+	text-align: center;
+	border-bottom: 2px solid #b19d73;
+	padding: 0.4em;
+	margin-bottom: 1em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#quienes-somos .box p {
+	width: 88%;
+	font-size: 1.3em;
+}
+
+#nuestro-estilo {
+	background-image: url(../imgs/banner3.jpg);
+}
+
+#nuestro-estilo .box {
+	width: 40%;
+	height: 47%;
+	background-color: white;
+	padding: 3.4em 0 0 3.5em;
+	margin: 10% auto 0 0;
+}
+
+#nuestro-estilo .box h2 {
+	-webkit-transform: scaleX(0.8);
+	transform: scaleX(0.8);
+	width: 45%;
+	text-align: center;
+	border-bottom: 2px solid #b19d73;
+	padding: 0.4em;
+	margin-bottom: 1em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#nuestro-estilo .box p {
+	width: 88%;
+	font-size: 1.3em;
+}
+
+#galeria {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+#galeria .box {
+	margin-top: 6%;
+	margin-bottom: 3%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+}
+
+#galeria .box h2 {
+	-webkit-transform: scaleX(0.8);
+	transform: scaleX(0.8);
+	width: 38%;
+	font-size: 3em;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 2%;
+	border-bottom: 2px solid #b19d73;
+	padding: 0.35em;
+}
+
+#galeria .box p {
+	width: 45%;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 500;
+}
+
+#galeria .box2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 10%;
+}
+
+#galeria .box2 img {
+	transition: transform 0.2s, filter 1s;
+	cursor: pointer;
+}
+
+#galeria .box2 img:hover {
+	filter: grayscale(100%);
+	transform: scale(1.005);
+}
+
+#contactate {
+	background-image: url(../imgs/banner4.jpg);
+	align-items: center;
+}
+
+#contactate .box {
+	flex-wrap: wrap;
+	margin-top: 4%;
+	margin-bottom: 3%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+}
+
+#contactate .box h2 {
+	-webkit-transform: scaleX(0.8);
+	transform: scaleX(0.8);
+	width: 45%;
+	font-size: 3em;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 1%;
+	border-bottom: 2px solid #b19d73;
+	padding: 0.2em;
+}
+
+#contactate .box p {
+	width: 55%;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 500;
+}
+
+#contactate .box2 {
+	width: 60%;
+	height: auto;
+	background-color: rgba(0, 0, 0, 0.767);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#contactate .box2 form {
+	width: 95%;
+}
+
+#contactate .box2 form .row:nth-child(1) {
+	margin-top: 2%;
+}
+
+#contactate .box2 form .row:nth-child(1) input {
+	height: 2.7em;
+	font-size: 1.5em;
+}
+
+#contactate .box2 form .row:nth-child(2) {
+	margin-top: 3%;
+}
+
+#contactate .box2 form .row:nth-child(2) textarea {
+	font-size: 1.5em;
+}
+
+#contactate .box2 form .button3 {
+	text-decoration: none !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 4% auto;
+	width: 9em;
+	height: 2.2em;
+	font-size: 1.8em;
+	border-radius: 15px;
+	background-color: #c3b18a;
+	transition: 0.5s;
+	color: white;
+	text-transform: uppercase;
+}
+
+#contactate .box2 form .button3 span {
+	-webkit-transform: scale(0.8, 1.1);
+	transform: scale(0.9, 1.15);
+}
+
+#contactate .box2 form .button3:hover {
+	background-color: #e4d3ae;
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+footer i {
+	color: #b19d73;
+	margin: 1.5em 0.5em 0.4em;
+	font-size: 2.1em;
+}
+
+footer p {
+	color: rgb(207, 206, 206);
+	font-size: 1.2em;
+	margin-bottom: 0.1em;
+}
+
+footer .links {
+	margin-bottom: 7%;
+}
+
+footer .links a {
+	color: #b19d73;
+	font-size: 1.2em;
+	margin: 0 0.5em;
+	text-decoration: underline;
+}
