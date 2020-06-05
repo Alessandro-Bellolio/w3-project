@@ -6,13 +6,7 @@ $(document).scroll(function() {
 			$('.logo').removeClass('smaller');
 		}
 	}
-
-	const homeHeight = $('#home').height();
-
-	if ($(this).scrollTop() > 0) {
-		$('#home .box').fadeIn('slow');
-	}
-
+	
 	if ($(this).scrollTop() > 700) {
 		$('#quienes-somos .box').fadeIn('slow', function() {
 			$('#quienes-somos a').fadeIn('slow');
